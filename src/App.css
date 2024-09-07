@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stepper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.step{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+.step-num{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  z-index: 2;
+  background: #ccc;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.step-name{
+ font-size: 14px;
+}
+
+.incomplete .step-num {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.complete .step-num {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.progressbar{
+  position: absolute;
+  height: 4px;
+  top: 25%;
+  background-color: #ccc;
+  left: 0;
+  width: 92%;
+  margin-left: 5%;
+}
+
+.progress{
+  height: 100%;
+  background-color: #28a745;
+  transition: 0.2s ease;
+}
+
+.errorinput{
+  border-color: red;
+}
+
+.errortitle{
+  color: red;
+}
+

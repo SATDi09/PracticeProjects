@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ModalBackground{
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Modal{
+  background: white;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  min-width: 520px;
+  padding: 25px;
+  position: absolute;
+}
+
+.ModalHeader{
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title ,.close {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close{
+  cursor: pointer;
+}
+
+.ProgressWrapper{
+  width: 300px;
+  height: 30px;
+  border: 1px solid gray;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4px;
+}
+
+.ProgressBar{
+  /* padding: 10px; */
+  width: 80%;
+  background-color: aliceblue;
+}
